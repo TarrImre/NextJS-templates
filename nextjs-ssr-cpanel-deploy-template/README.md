@@ -97,6 +97,16 @@ app.prepare().then(() => {
       // This tells it to parse the query portion of the URL.
       const parsedUrl = parse(req.url, true)
       
+      /*
+      if (pathname === '/a') {
+        await app.render(req, res, '/a', query)
+      } else if (pathname === '/b') {
+        await app.render(req, res, '/b', query)
+      } else {
+        await handle(req, res, parsedUrl)
+      }
+      */
+     
       // App Router handles all routing automatically
       await handle(req, res, parsedUrl)
     } catch (err) {
