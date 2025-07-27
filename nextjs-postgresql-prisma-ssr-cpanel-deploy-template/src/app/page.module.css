@@ -1,0 +1,60 @@
+.main {
+  min-height: 100vh;
+  background: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  max-width: 500px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #22223b;
+  text-align: center;
+}
+
+.error {
+  background: #ffe5e5;
+  color: #b00020;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.userList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.userItem {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ececec;
+  color: #333;
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userItem:last-child {
+  border-bottom: none;
+}
+
+.noUsers {
+  color: #888;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-style: italic;
+}
